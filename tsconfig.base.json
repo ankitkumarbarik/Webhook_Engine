@@ -1,0 +1,26 @@
+
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "commonjs",
+        "removeComments": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        // Path alias setup
+        "paths": {
+            "@types/*": ["./packages/types/*"],
+            "@constants/*": ["./packages/constants/*"],
+            "@config/*": ["./packages/config/*"],
+            "@db/*": ["packages/db/src/*"]
+        },
+
+        // typeRoots setup to resolve types in node_modules folder as well as in src folder
+        "typeRoots": ["./packages/types", "./node_modules/@types"]
+    },
+    "exclude": ["node_modules", "dist"],
+}

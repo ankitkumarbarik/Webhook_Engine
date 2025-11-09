@@ -1,0 +1,23 @@
+{
+  "name": "webhook-flow",
+  "version": "1.0.0",
+  "description": "A simple project demonstrating how webhooks work — from event trigger to receiver endpoint",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev --stream",
+    "build": "pnpm -r run build",
+    "start": "pnpm -r --parallel run start --stream",
+    "clean": "pnpm -r run clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.20.0",
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "dotenv": "^17.2.3",
+    "rimraf": "^6.1.0",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
+  }
+}
